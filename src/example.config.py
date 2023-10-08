@@ -1,10 +1,10 @@
-'''
-Created on 13 Aug 2017
-@author: cave
-Copy this file to config.py and update the settings
-'''
 #!/usr/bin/env python
 # encoding: utf-8
+'''
+Created on 13 Aug 2017 (updated 08.10.2023)
+@author: cave, derdritte
+Copy this file to config.py and update the settings
+'''
 
 '''
 Get your API key
@@ -20,22 +20,22 @@ https://dns.api.gandi.net/api/v5/
 '''
 api_endpoint = 'https://dns.api.gandi.net/api/v5'
 
-#your domain with the subdomains in the zone file/UUID 
-domain = 'mydomain.tld'
+# your domain with the subdomains in the zone file/UUID
+domain = 'domain.com'
 
-#enter all subdomains to be updated, subdomains must already exist to be updated
+# enter all subdomains to be updated, subdomains must already exist to be updated
 subdomains = ["subdomain1", "subdomain2", "subdomain3"]
 
-#300 seconds = 5 minutes
+# 300 seconds = 5 minutes
 ttl = '300'
 
-''' 
-IP address lookup service 
+'''
+IP address lookup service
 run your own external IP provider:
 + https://github.com/mpolden/ipd
 + <?php $ip = $_SERVER['REMOTE_ADDR']; ?>
   <?php print $ip; ?>
-e.g. 
+e.g.
 + https://ifconfig.co/ip
 + http://ifconfig.me/ip
 + http://whatismyip.akamai.com/
